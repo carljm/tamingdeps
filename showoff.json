@@ -1,6 +1,11 @@
 {
   "name": "Taming dependencies with pip",
   "sections": [
-              {"section":"title"}
-              ]
+      {"section":"title"},
+      {"section":"basics"},
+      {"section":"easywins"},
+      {"section":"advanced"},
+      {"section":"other"},
+      {"section":"outro"}
+  ]
 }

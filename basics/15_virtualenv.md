@@ -9,5 +9,4 @@
 
 * use it
 * use `--no-site-packages`
-* and `virtualenvwrapper`
 * recreate freely and often

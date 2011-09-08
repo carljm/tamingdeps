@@ -18,10 +18,6 @@
 
 ## but you don't have to! ##
 
-### you're one of the fortunate ones ###
-
-### a web developer ###
-
 <!SLIDE incremental>
 
     @@@ comment
@@ -36,7 +32,6 @@
 ## scope ##
 
 * a web project
-* deployed on the server
 * not a library
 * not an end-user program
 

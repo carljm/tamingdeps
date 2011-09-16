@@ -92,22 +92,12 @@
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/10_problem/1">
 <h2>dependencies are painful</h2></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/10_problem/2">
-<h2>even Django hates them</h2>
-
-<pre class="sh_comment"><code>As evidence, I present this cute little obscenity.</code></pre></div>
+<h2>even Django hates them</h2></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/10_problem/3">
 <pre class="sh_python"><code>from django.utils import unittest</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/10_problem/4">
 <h2>but you don't have to!</h2></div>
 </div><div class="slide" data-transition="none"><div class="content incremental" ref="basics/10_problem/5">
-<pre class="sh_comment"><code>libraries
-    - harder, because less control over how and where used
-    - might discuss at the end if I have time
-end-user programs
-    - really really hard, less control and used by non-programmers
-    - Django's situation, due to wanting easy ramp-up for beginners
-    - not going to discuss; not pip's focus either</code></pre>
-
 <h2>scope</h2>
 
 <ul>
@@ -119,15 +109,6 @@ end-user programs
 </div><div class="slide" data-transition="none"><div class="content incremental" ref="basics/10_problem/6">
 <h2>deployment desiderata</h2>
 
-<pre class="sh_comment"><code>- not going to talk about all aspects of a deployment system, just
-  dependency management. these might be obvious, but:
-- repeatable: if you haven't changed anything intentionally, deploying the
-  same project twice should have exactly the same results
-- reliable: not reliant on servers outside your control that might be down,
-  minimize moving parts that could break
-- fast: you want to be able to deploy often and casually and with minimum
-  downtime; speed matters</code></pre>
-
 <ul>
 <li>repeatable</li>
 <li>reliable</li>
@@ -135,10 +116,6 @@ end-user programs
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content incremental" ref="basics/15_virtualenv">
-<pre class="sh_comment"><code>- also by Ian
-- just use it
-- just this is a big step towards repeatable and reliable deployments</code></pre>
-
 <h2>virtualenv</h2>
 
 <ul>
@@ -148,16 +125,12 @@ end-user programs
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/20_pip">
-<pre class="sh_comment"><code>- pip: pretty good toolbox, but you still need to learn to know the tools</code></pre>
-
 <h1>pip!</h1>
 
 <h3>by Ian Bicking</h3>
 
 <h3>"Pip Installs (Python) Packages"</h3></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="easywins/10_requirements/1">
-<pre class="sh_comment"><code>pretty simple: this project, at this version</code></pre>
-
 <h2>the pip requirements file</h2>
 
 <pre class="sh_"><code>Django==1.3
@@ -181,9 +154,6 @@ django-classy-tags==0.3.0
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content incremental nobullets" ref="easywins/10_requirements/3">
-<pre class="sh_comment"><code>pip's advanced features make a lot more sense if you understand the
-underlying basics</code></pre>
-
 <h2>how it works</h2>
 
 <ul>
@@ -225,26 +195,14 @@ use-mirrors=true</code></pre></div>
 <li>and now their site's down and I can't deploy</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content incremental" ref="advanced/10_why/2">
-<pre class="sh_comment"><code>Ultimately, you've got to control your own dependency source if you want
-reliable deployments. I'll go over three ways pip can help you do that.</code></pre>
-
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="advanced/10_why/2">
 <h2>if you want it done right, do it yourself</h2>
 
-<ul>
-<li><ol>
+<ol>
 <li><code>--index-url</code></li>
-</ol>
-</li>
-<li><ol>
 <li><code>--find-links</code></li>
-</ol>
-</li>
-<li><ol>
 <li><code>vendor/</code></li>
 </ol>
-</li>
-</ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="advanced/20_index_url/1">
 <h1>option 1</h1></div>
@@ -272,10 +230,6 @@ reliable deployments. I'll go over three ways pip can help you do that.</code></
     `-- django-floppyforms-0.4.2.tar.gz
 </code></code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content incremental" ref="advanced/20_index_url/4">
-<pre class="sh_comment"><code>- directory per project is a pain to maintain manually
-- or you can use dynamic web software (e.g. chishop) - but that introduces
-its own complexities and higher maintenance</code></pre>
-
 <h2>your own index</h2>
 
 <ul>
@@ -363,13 +317,8 @@ its own complexities and higher maintenance</code></pre>
 </div><div class="slide" data-transition="none"><div class="content" ref="other/10_vcs/2">
 <h2>it's excellent</h2></div>
 </div><div class="slide" data-transition="none"><div class="content incremental" ref="other/10_vcs/3">
-<pre class="sh_comment"><code>- testing if the tip version fixes a bug, developing a reusable app...</code></pre>
-
 <h2>use it in development</h2></div>
 </div><div class="slide" data-transition="none"><div class="content incremental" ref="other/10_vcs/4">
-<pre class="sh_comment"><code>- anytime you have to install something new on your server just to support
-  your deployment process, you might be doing something wrong</code></pre>
-
 <h2>not for production deploys</h2>
 
 <ul>

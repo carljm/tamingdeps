@@ -27,11 +27,6 @@
 
 <!SLIDE incremental>
 
-    @@@ comment
-    - directory per project is a pain to maintain manually
-    - or you can use dynamic web software (e.g. chishop) - but that introduces
-    its own complexities and higher maintenance
-
 ## your own index ##
 
 * easy to upload internal packages with `setup.py upload`

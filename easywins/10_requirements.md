@@ -1,8 +1,5 @@
 <!SLIDE>
 
-    @@@ comment
-    pretty simple: this project, at this version
-
 ## the pip requirements file ##
 
     @@@
@@ -27,10 +24,6 @@
 * test regularly in a clean venv
 
 <!SLIDE incremental nobullets>
-
-    @@@ comment
-    pip's advanced features make a lot more sense if you understand the
-    underlying basics
 
 ## how it works ##
 

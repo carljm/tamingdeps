@@ -10,16 +10,9 @@
 
 <!SLIDE incremental>
 
-    @@@ comment
-    - testing if the tip version fixes a bug, developing a reusable app...
-
 ## use it in development ##
 
 <!SLIDE incremental>
-
-    @@@ comment
-    - anytime you have to install something new on your server just to support
-      your deployment process, you might be doing something wrong
 
 ## not for production deploys ##
 

@@ -1,3 +1,5 @@
+View these slides at http://carljm.github.com/tamingdeps/
+
 This presentation uses https://github.com/schacon/showoff
 
 To view it, "gem install showoff" and run "showoff serve" in this directory,
